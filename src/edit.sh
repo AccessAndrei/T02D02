@@ -40,7 +40,7 @@ code=$(shasum -a 256 $file)
 
 code=${code% *}
 
-res="src/$file - $filesize - 2022-$month-$day $last_change - $code - sha256\n"
+res="src/$file - $filesize - 2022-$month-$day $last_change - $code - sha256"
 
 echo $res >> files.log
 
